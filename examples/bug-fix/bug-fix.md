@@ -1,8 +1,8 @@
 ---
 on:
-  label_command:
-    name: "bug"
-    remove_label: false
+  issues:
+    types: [labeled]
+    names: [bug]
 permissions:
   contents: read
   issues: read

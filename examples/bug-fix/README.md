@@ -50,3 +50,7 @@ Default pull request behavior:
 - Adjust pull request labels and title prefix to match your contribution workflow
 - Add escalation guidance for cases that should always go to a human instead of automation
 - Add context to the prompt about the codebase structure, testing framework, or common bug patterns to improve fix quality
+
+
+## Footgun
+- 
