@@ -26,6 +26,7 @@ Key design principles:
 | [Auto-Triage](examples/auto-triage/) | `issues: opened, edited` | Low | Automatically labels new or edited issues to improve triage speed and backlog quality |
 | [Bug Fix](examples/bug-fix/) | `issues: labeled (bug)` | Low | Attempts to reproduce and fix reported bugs, then opens a pull request with the proposed change |
 | [Workflow Failure Doctor](examples/workflow-failure-doctor/) | `workflow_run: completed (failure)` | Medium | Investigates failed CI runs to identify root causes, detect recurring patterns, and create investigation issues |
+| [Parallel Prototype](examples/paralell-prototype/) | `slash_command: /build` | High | Dispatches three persona-driven agents to build competing prototypes from the same plan in parallel |
 
 ### Auto-Triage
 
@@ -38,6 +39,10 @@ When an issue is labeled `bug`, the agent analyzes the codebase for likely root 
 ### Workflow Failure Doctor
 
 When a CI workflow fails on `main`, the agent retrieves job logs, analyzes root causes, correlates with historical failures, detects duplicates, and creates or updates an investigation issue with findings and recommended actions.
+
+### Parallel Prototype
+
+A `/build` command on an issue triggers an orchestrator that creates a structured implementation plan and dispatches three worker agents in parallel — **The Architect** (clean design), **The Guardian** (security-first), and **The Swift** (speed and pragmatism). Each builds an independent prototype and opens its own pull request, enabling side-by-side comparison of approaches.
 
 ## Getting Started
 
