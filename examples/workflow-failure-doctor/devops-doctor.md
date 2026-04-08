@@ -2,8 +2,11 @@
 description: Investigates failed CI workflows to identify root causes and patterns, creating issues with diagnostic information
 on:
   workflow_run:
-    types:
-      - completed
+    # GitHub requires explicit workflow names here; wildcards are not supported.
+    # Watch every other workflow in this repo, but exclude CI Failure Doctor itself
+    # to avoid recursive workflow_run triggers when the doctor fails.
+    workflows: ["your_workflow_name"]
+    types: [completed]
     branches:
       - main
 
@@ -40,7 +43,6 @@ safe-outputs:
 tools:
   cache-memory: true
   web-fetch:
-  web-search:
   github:
     toolsets: [default, actions]  # default: context, repos, issues, pull_requests; actions: workflow logs and artifacts
 

@@ -56,7 +56,18 @@ Default issue behavior:
 - Existing issues for recurrence or duplication
 - Cached investigation artifacts for historical comparison
 
+## Example
+
+### When a workflow run fails, the agent begins investigation
+![Workflow run failure](images/failure.png)
+
+### The agent creates an investigation issue with root cause analysis
+![Investigation issue created](images/triage.png)
+
+
+
 ## Customization
+- **IMPORTANT**: Update the `workflow_run` trigger to match your actual CI workflow name(s) to avoid unintended triggers
 - Expand branch filters beyond `main` for monorepos or release branches
 - Tune duplicate detection logic and closure policy for your team
 - Adjust issue labels and title prefix to match triage conventions
