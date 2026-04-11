@@ -6,6 +6,7 @@ on:
     types: [opened, edited]
 permissions:
   contents: read
+  issues: read
 network:
   allowed:
     - defaults
