@@ -3,7 +3,7 @@
 Prototype workflow that converts a feature request into a new **draft GH-AW workflow example** and opens a pull request with the proposed files.
 
 ## Complexity
-- **Medium**: Requires issue analysis, constrained file creation, and safe pull request generation while keeping changes scoped to a dedicated examples folder.
+- **Medium**: Requires issue analysis, constrained file creation, and safe pull request generation while keeping changes scoped to a dedicated example folder.
 
 ## Why This Is Valuable
 

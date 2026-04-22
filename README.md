@@ -26,7 +26,7 @@ Key design principles:
 | [Auto-Triage](examples/auto-triage/) | `issues: opened, edited` | Low | Automatically labels new or edited issues to improve triage speed and backlog quality |
 | [Bug Fix](examples/bug-fix/) | `issues: labeled (bug)` | Low | Attempts to reproduce and fix reported bugs, then opens a pull request with the proposed change |
 | [Workflow Failure Doctor](examples/workflow-failure-doctor/) | `workflow_run: completed (failure)` | Medium | Investigates failed CI runs to identify root causes, detect recurring patterns, and create investigation issues |
-| [Parallel Prototype](examples/paralell-prototype/) | `slash_command: /build` | High | Dispatches three persona-driven agents to build competing prototypes from the same plan in parallel |
+| [Parallel Prototype](examples/parallel-prototype/) | `slash_command: /build` | High | Dispatches three persona-driven agents to build competing prototypes from the same plan in parallel |
 | [Workflow Additions Prototype](examples/workflow-additions/) | `slash_command: /add-workflow` | Medium | Turns an issue request into a draft GH-AW workflow example PR with constrained safe outputs |
 
 ### Auto-Triage
